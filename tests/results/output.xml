@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200901 23:00:10.540" rpa="false">
+<suite id="s1" name="registerTestCases &amp; searchTestCases">
+<suite id="s1-s1" name="registerTestCases" source="C:\Users\AbdElAziz\PycharmProjects\POM_RobotFramework\tests\registerTestCases.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Navigate To Homepage</arg>
+</arguments>
+<kw name="Navigate To Homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${aut_Url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:11.204" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/register?returnUrl=%2F'.</msg>
+<status status="PASS" starttime="20200901 23:00:11.204" endtime="20200901 23:00:18.321"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200901 23:00:18.321" endtime="20200901 23:00:20.503"></status>
+</kw>
+<kw name="configure selenium general options" library="testBase">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${imp_wait}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.503"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${sele_speed}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.503"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.503"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:11.204" endtime="20200901 23:00:20.503"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:11.204" endtime="20200901 23:00:20.503"></status>
+</kw>
+<test id="s1-s1-t1" name="user enter invalid Register data Test Case">
+<kw name="Generate Test Data for invalid Regiter">
+<kw name="Generate Similar Data For the Form">
+<kw name="generateRandomPersonName" library="genTestData">
+<arguments>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${fName}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>1</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.503" level="INFO">${a} = X</msg>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.503"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${numberOfLetters}</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.503" level="INFO">${b} = paignsg</msg>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.503"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${name} = Xpaignsg</msg>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.519"></status>
+</kw>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${fName} = Xpaignsg</msg>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${fName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${fName} = Xpaignsg</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="generateRandomPersonName" library="genTestData">
+<arguments>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${lName}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>1</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${a} = P</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${numberOfLetters}</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${b} = nobfmps</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${name} = Pnobfmps</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${lName} = Pnobfmps</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${lName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${lName} = Pnobfmps</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="generateRandomEmail" library="genTestData">
+<assign>
+<var>${email}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${a} = lwkgf</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${b} = .</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.519" level="INFO">${c} = subtf</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.519"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${d}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${d} = 89</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@testDomain.ext</arg>
+</arguments>
+<assign>
+<var>${e}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${e} = @testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}${c}${d}${e}</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${email} = lwkgf.subtf89@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${email} = lwkgf.subtf89@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:20.519" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${email} = lwkgf.subtf89@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="generateRandomPassword" library="genTestData">
+<assign>
+<var>${password}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${a} = AL</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${b} = ciu</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${c} = 128</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}${c}</arg>
+</arguments>
+<assign>
+<var>${password}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${password} = ALciu128</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${password} = ALciu128</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:20.534" level="INFO">${password} = ALciu128</msg>
+<status status="PASS" starttime="20200901 23:00:20.534" endtime="20200901 23:00:20.534"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.534"></status>
+</kw>
+<kw name="generateRandomPassword" library="genTestData">
+<assign>
+<var>${confirmPassword}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${a} = BF</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${b} = vsp</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${c} = 169</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}${c}</arg>
+</arguments>
+<assign>
+<var>${password}</var>
+</assign>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${password} = BFvsp169</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${confirmPassword} = BFvsp169</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${confirmPassword}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:20.550" level="INFO">${confirmPassword} = BFvsp169</msg>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.550"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:20.550"></status>
+</kw>
+<kw name="Invalid Register Test Case" library="registerKeywords">
+<arguments>
+<arg>${fName}</arg>
+<arg>${lName}</arg>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<arg>${confirmPassword}</arg>
+</arguments>
+<kw name="Click Male Radion Button" library="registerKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:20.951"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:20.951" endtime="20200901 23:00:21.098"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:21.098" level="INFO">Clicking element 'xpath://input[@id='gender-male']'.</msg>
+<status status="PASS" starttime="20200901 23:00:21.098" endtime="20200901 23:00:21.270"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:21.270"></status>
+</kw>
+<kw name="Enter User First Name" library="registerKeywords">
+<arguments>
+<arg>${fName}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:21.270" endtime="20200901 23:00:21.653"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:21.653" endtime="20200901 23:00:21.800"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+<arg>${fName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:21.800" level="INFO">Typing text 'Xpaignsg' into text field 'xpath://input[@id='FirstName']'.</msg>
+<status status="PASS" starttime="20200901 23:00:21.800" endtime="20200901 23:00:22.122"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:21.270" endtime="20200901 23:00:22.122"></status>
+</kw>
+<kw name="Enter User Last Name" library="registerKeywords">
+<arguments>
+<arg>${lName}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:22.122" endtime="20200901 23:00:22.525"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:22.525" endtime="20200901 23:00:22.659"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+<arg>${lName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:22.659" level="INFO">Typing text 'Pnobfmps' into text field 'xpath://input[@id='LastName']'.</msg>
+<status status="PASS" starttime="20200901 23:00:22.659" endtime="20200901 23:00:22.957"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:22.122" endtime="20200901 23:00:22.957"></status>
+</kw>
+<kw name="Enter User Email" library="registerKeywords">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:22.957" endtime="20200901 23:00:23.363"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:23.363" endtime="20200901 23:00:23.503"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:23.503" level="INFO">Typing text 'lwkgf.subtf89@testDomain.ext' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20200901 23:00:23.503" endtime="20200901 23:00:23.878"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:22.957" endtime="20200901 23:00:23.878"></status>
+</kw>
+<kw name="Enter User Password" library="registerKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:23.878" endtime="20200901 23:00:24.266"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:24.266" endtime="20200901 23:00:24.409"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:24.409" level="INFO">Typing text 'ALciu128' into text field 'xpath://input[@id='Password']'.</msg>
+<status status="PASS" starttime="20200901 23:00:24.409" endtime="20200901 23:00:24.720"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:23.878" endtime="20200901 23:00:24.720"></status>
+</kw>
+<kw name="Confirm User Password" library="registerKeywords">
+<arguments>
+<arg>${confirmPassword}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:24.720" endtime="20200901 23:00:25.139"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:25.139" endtime="20200901 23:00:25.270"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+<arg>${confirmPassword}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:25.270" level="INFO">Typing text 'BFvsp169' into text field 'xpath://input[@id='ConfirmPassword']'.</msg>
+<status status="PASS" starttime="20200901 23:00:25.270" endtime="20200901 23:00:25.565"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:24.720" endtime="20200901 23:00:25.565"></status>
+</kw>
+<kw name="Click Register Button" library="registerKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:25.565" endtime="20200901 23:00:25.961"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:25.961" endtime="20200901 23:00:26.113"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.113" level="INFO">Clicking element 'xpath://input[@id='register-button']'.</msg>
+<status status="PASS" starttime="20200901 23:00:26.113" endtime="20200901 23:00:26.408"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:25.565" endtime="20200901 23:00:26.408"></status>
+</kw>
+<kw name="Verify Unsucessful Registeration unmatched passwords" library="registerKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_unmatchingPasswords}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:26.408" endtime="20200901 23:00:26.582"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${reg_unmatchingPasswords}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.651" level="INFO">Current page contains element 'xpath://span[@id='ConfirmPassword-error']'.</msg>
+<status status="PASS" starttime="20200901 23:00:26.582" endtime="20200901 23:00:26.651"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.408" endtime="20200901 23:00:26.651"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.550" endtime="20200901 23:00:26.651"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:20.503" endtime="20200901 23:00:26.651" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="user enter valid Register data Test Case">
+<kw name="Generate Test Data for valid Regiter">
+<kw name="Generate Similar Data For the Form">
+<kw name="generateRandomPersonName" library="genTestData">
+<arguments>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${fName}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>1</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${a} = O</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${numberOfLetters}</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${b} = ddfnsay</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${name} = Oddfnsay</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${fName} = Oddfnsay</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${fName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${fName} = Oddfnsay</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<kw name="generateRandomPersonName" library="genTestData">
+<arguments>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${lName}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>1</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.651" level="INFO">${a} = U</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.651"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${numberOfLetters}</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${b} = gppkale</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${name} = Ugppkale</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${lName} = Ugppkale</msg>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${lName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${lName} = Ugppkale</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="generateRandomEmail" library="genTestData">
+<assign>
+<var>${email}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${a} = cwfan</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>.</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${b} = .</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${c} = ciaeo</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${d}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${d} = 26</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@testDomain.ext</arg>
+</arguments>
+<assign>
+<var>${e}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${e} = @testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}${c}${d}${e}</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${email} = cwfan.ciaeo26@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${email} = cwfan.ciaeo26@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${email} = cwfan.ciaeo26@testDomain.ext</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="generateRandomPassword" library="genTestData">
+<assign>
+<var>${password}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>2</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${a} = MC</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${b} = dqf</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>3</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${c} = 924</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${a}${b}${c}</arg>
+</arguments>
+<assign>
+<var>${password}</var>
+</assign>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${password} = MCdqf924</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<msg timestamp="20200901 23:00:26.667" level="INFO">${password} = MCdqf924</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.667"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:26.683" level="INFO">${password} = MCdqf924</msg>
+<status status="PASS" starttime="20200901 23:00:26.667" endtime="20200901 23:00:26.683"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.683"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:26.683"></status>
+</kw>
+<kw name="valid Register Test Case" library="registerKeywords">
+<arguments>
+<arg>${fName}</arg>
+<arg>${lName}</arg>
+<arg>${email}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Click Male Radion Button" library="registerKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:26.683" endtime="20200901 23:00:27.115"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:27.115" endtime="20200901 23:00:27.284"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_maleRadBtn}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:27.284" level="INFO">Clicking element 'xpath://input[@id='gender-male']'.</msg>
+<status status="PASS" starttime="20200901 23:00:27.284" endtime="20200901 23:00:27.554"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.683" endtime="20200901 23:00:27.554"></status>
+</kw>
+<kw name="Enter User First Name" library="registerKeywords">
+<arguments>
+<arg>${fName}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:27.554" endtime="20200901 23:00:27.986"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:27.986" endtime="20200901 23:00:28.155"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_fNameBox}</arg>
+<arg>${fName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:28.155" level="INFO">Typing text 'Oddfnsay' into text field 'xpath://input[@id='FirstName']'.</msg>
+<status status="PASS" starttime="20200901 23:00:28.155" endtime="20200901 23:00:28.676"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:27.554" endtime="20200901 23:00:28.676"></status>
+</kw>
+<kw name="Enter User Last Name" library="registerKeywords">
+<arguments>
+<arg>${lName}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:28.676" endtime="20200901 23:00:29.092"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:29.092" endtime="20200901 23:00:29.264"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_lNameBox}</arg>
+<arg>${lName}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:29.264" level="INFO">Typing text 'Ugppkale' into text field 'xpath://input[@id='LastName']'.</msg>
+<status status="PASS" starttime="20200901 23:00:29.264" endtime="20200901 23:00:29.723"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:28.676" endtime="20200901 23:00:29.723"></status>
+</kw>
+<kw name="Enter User Email" library="registerKeywords">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:29.723" endtime="20200901 23:00:30.168"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:30.168" endtime="20200901 23:00:30.346"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_emailBox}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:30.346" level="INFO">Typing text 'cwfan.ciaeo26@testDomain.ext' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20200901 23:00:30.346" endtime="20200901 23:00:30.974"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:29.723" endtime="20200901 23:00:30.974"></status>
+</kw>
+<kw name="Enter User Password" library="registerKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:30.974" endtime="20200901 23:00:31.439"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:31.439" endtime="20200901 23:00:31.608"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_passwordBox}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:31.608" level="INFO">Typing text 'MCdqf924' into text field 'xpath://input[@id='Password']'.</msg>
+<status status="PASS" starttime="20200901 23:00:31.608" endtime="20200901 23:00:32.032"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:30.974" endtime="20200901 23:00:32.032"></status>
+</kw>
+<kw name="Confirm User Password" library="registerKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:32.032" endtime="20200901 23:00:32.481"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:32.481" endtime="20200901 23:00:32.659"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_confirmPasswordBox}</arg>
+<arg>${confirmPassword}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:32.659" level="INFO">Typing text 'MCdqf924' into text field 'xpath://input[@id='ConfirmPassword']'.</msg>
+<status status="PASS" starttime="20200901 23:00:32.659" endtime="20200901 23:00:33.185"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:32.032" endtime="20200901 23:00:33.185"></status>
+</kw>
+<kw name="Click Register Button" library="registerKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:33.185" endtime="20200901 23:00:33.602"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:33.602" endtime="20200901 23:00:33.768"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${reg_regBtn}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:33.768" level="INFO">Clicking element 'xpath://input[@id='register-button']'.</msg>
+<status status="PASS" starttime="20200901 23:00:33.768" endtime="20200901 23:00:37.311"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:33.185" endtime="20200901 23:00:37.311"></status>
+</kw>
+<kw name="Verify Sucessful Registeration" library="registerKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${reg_success}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:37.315" endtime="20200901 23:00:37.499"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${reg_success}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:37.581" level="INFO">Current page contains element 'xpath://div[@class='result' and contains(text(),'Your registration completed')]'.</msg>
+<status status="PASS" starttime="20200901 23:00:37.499" endtime="20200901 23:00:37.581"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:37.311" endtime="20200901 23:00:37.581"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.683" endtime="20200901 23:00:37.581"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:26.651" endtime="20200901 23:00:37.585" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="user enter valid Login data Test Case">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://demo.nopcommerce.com/login?returnUrl=%2F</arg>
+</arguments>
+<msg timestamp="20200901 23:00:37.593" level="INFO">Opening url 'https://demo.nopcommerce.com/login?returnUrl=%2F'</msg>
+<status status="PASS" starttime="20200901 23:00:37.593" endtime="20200901 23:00:38.643"></status>
+</kw>
+<kw name="Fill Login Form Validly" library="loginKeywords">
+<arguments>
+<arg>${email}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Enter UserName" library="loginKeywords">
+<arguments>
+<arg>${email_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${log_email}</arg>
+<arg>${email_data}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:38.651" level="INFO">Typing text 'cwfan.ciaeo26@testDomain.ext' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20200901 23:00:38.647" endtime="20200901 23:00:39.141"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:38.647" endtime="20200901 23:00:39.141"></status>
+</kw>
+<kw name="Enter Password" library="loginKeywords">
+<arguments>
+<arg>${password_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${log_passwordBox}</arg>
+<arg>${password_data}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:39.141" level="INFO">Typing text 'MCdqf924' into text field 'xpath://input[@id='Password']'.</msg>
+<status status="PASS" starttime="20200901 23:00:39.141" endtime="20200901 23:00:39.596"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:39.141" endtime="20200901 23:00:39.596"></status>
+</kw>
+<kw name="Click Login Button" library="loginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${log_loginBtn}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:39.596" level="INFO">Clicking element 'xpath://input[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20200901 23:00:39.596" endtime="20200901 23:00:44.246"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:39.596" endtime="20200901 23:00:44.246"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:38.643" endtime="20200901 23:00:44.250"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:37.589" endtime="20200901 23:00:44.250" critical="yes"></status>
+</test>
+<kw name="Exit These Tests" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200901 23:00:44.259" endtime="20200901 23:00:46.526"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:44.259" endtime="20200901 23:00:46.526"></status>
+</kw>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20200901 23:00:10.587" endtime="20200901 23:00:46.526"></status>
+</suite>
+<suite id="s1-s2" name="searchTestCases" source="C:\Users\AbdElAziz\PycharmProjects\POM_RobotFramework\tests\searchTestCases.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Navigate To Homepage</arg>
+</arguments>
+<kw name="Navigate To Homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${aut_Url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200901 23:00:46.580" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/register?returnUrl=%2F'.</msg>
+<status status="PASS" starttime="20200901 23:00:46.580" endtime="20200901 23:00:53.063"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200901 23:00:53.063" endtime="20200901 23:00:55.325"></status>
+</kw>
+<kw name="configure selenium general options" library="testBase">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${imp_wait}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:55.325" endtime="20200901 23:00:55.388"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${sele_speed}</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:55.388" endtime="20200901 23:00:55.388"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:55.325" endtime="20200901 23:00:55.388"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:46.580" endtime="20200901 23:00:55.388"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:46.580" endtime="20200901 23:00:55.388"></status>
+</kw>
+<test id="s1-s2-t1" name="user search For Product">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>This is the body of the search test cases</arg>
+</arguments>
+<status status="PASS" starttime="20200901 23:00:55.394" endtime="20200901 23:00:55.394"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:55.388" endtime="20200901 23:00:55.394" critical="yes"></status>
+</test>
+<kw name="Exit These Tests" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200901 23:00:55.394" endtime="20200901 23:00:57.617"></status>
+</kw>
+<status status="PASS" starttime="20200901 23:00:55.394" endtime="20200901 23:00:57.617"></status>
+</kw>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20200901 23:00:46.533" endtime="20200901 23:00:57.617"></status>
+</suite>
+<status status="PASS" starttime="20200901 23:00:10.540" endtime="20200901 23:00:57.633"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="registerTestCases &amp; searchTestCases">registerTestCases &amp; searchTestCases</stat>
+<stat pass="3" fail="0" id="s1-s1" name="registerTestCases">registerTestCases &amp; searchTestCases.registerTestCases</stat>
+<stat pass="1" fail="0" id="s1-s2" name="searchTestCases">registerTestCases &amp; searchTestCases.searchTestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

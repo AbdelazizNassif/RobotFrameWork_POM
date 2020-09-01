@@ -1,0 +1,14 @@
+*** Settings ***
+Library  SeleniumLibrary
+
+*** Variables ***
+#Test Environment
+${aut_Url}=  https://demo.nopcommerce.com/register?returnUrl=%2F
+${browser}=  chrome
+${imp_wait}=  10
+${sele_speed}=  0.05
+
+*** Keywords ***
+configure selenium general options
+    Set Selenium Implicit Wait 	${imp_wait}
+    Set Selenium Speed  ${sele_speed}
