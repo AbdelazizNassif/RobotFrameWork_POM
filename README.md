@@ -1,25 +1,17 @@
 # RobotFrameWork_POM
 
--- Implementing POM testing automation model With Robot Framework
+How to run it? run the run.bat file containing the terminal lines to execute the tests. you will need to change the first line of it to your directory.
 
-How To Run? -> 
+xplanation:
 
-robot -d reslts tests/*.robot You must consider alphabitical naming of the tests files
+pages directory: locators.py ------> contains the pages elements
 
-robot -d reslts careersTest.robot -> grouping by tags including--> robot -d reslts -i tag careersTest.robot ->
+resources directory: contains robot files to generate test steps and scenarios to be used in the tests directly. so that the tests are written in specific format contains some initializations, test data, test steps
 
-grouping by tags excluding--> robot -d reslts -e tag careersTest.robot
+testDataGenerator directory: contains robot file to generate random data for the tests like phone numbers, emails, names, ... etc. .
 
-To Do Next:
+testsSetup directory: contains robot file/s to configure tests setup (actions before the tests) and tests teardown (action after the tests) and test environment.
 
-Adding Keywords for generating custom data like names and emails ---> Done
+tests directory: contains robot file/s to use the tests steps and scenarios to be run.
 
-Using These data generation Keywords to generate test data for test cases----> Done
-
-Grouping the tests ----> Done
-
-Implementing DDT
-
-Integrating with Jenking CI
-
-Integrating with Docker
+what to be added in the future ?? Jenkins integration, docker integration, DDT design.
